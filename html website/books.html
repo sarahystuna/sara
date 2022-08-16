@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<head><title>Books</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/e76b1e326e.js" crossorigin="anonymous"></script>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+ overflow: hidden;
+  
+  background-color: black;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+.topnav a:hover {
+  background-color: #C0C0C0;
+  color: black;
+}
+
+.topnav a.active hover{
+  background-color: black;
+  color: white;
+}
+</style></head>
+<body>
+<div class="topnav">
+  <a class="active" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+  
+  <a href="economy.html"><i class="fa-solid fa-chart-line"></i> Economy</a>
+  
+  <a href="Albania.html"><i class="fa-solid fa-flag"></i> Albania</a>
+  
+  <a href="opinion.html"><i class="fa-solid fa-comments"></i> Opinion</a>
+  
+  <a href="real estate.html"><i class="fa-solid fa-landmark"></i> Real Estate</a>
+  
+  <a href="books.html"><i class="fa-solid fa-book-open"></i> Books</a>
+   <a href="register.html"><i class="fa-solid fa-id-card"></i> Register</a>
+  </div>
+ 
+<header>
+<a href="index.html">
+
+</a>
+
+</header>
+
+<nav>
+<table cellspacing="5" cellpadding="5"
+<table>
+
+
+</nav>
+
+<div class="w3-content w3-display-container">
+<img class="mySlides" src="work-finance-documents-office-wallpaper-preview.jpg" width="1400" height="500">
+<img class="mySlides" src="xhoxho1.jpg" width="1400" height="500">
+<img class="mySlides" src="xhoxho2.jpg" width="1400" height="500">
+<img class="mySlides" src="xhoxho3.jpg" width="1400" height="500">
+
+
+<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+   
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
